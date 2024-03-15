@@ -1,0 +1,236 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #081b29;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.logo{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.logo:hover,
+.logo.active{
+    color: #0c8cb3;
+    transition: all 1s ease-in-out;   
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 1s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #0c8cb3
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    font-weight: 500;
+    color: #ededed;
+    font-size: larger;
+    
+}
+.content{
+    max-width: 600px;
+}
+.content h1{
+     font-size: 56px;
+     font-weight: 500;
+     font-style: oblique;
+}
+.content h3{
+    font-style: normal;
+    color: aqua;
+    text-transform: capitalize;
+}
+.content p{
+    margin: 20px 0 40px;
+    font-size: 20px;
+}
+.btn1{
+    display: inline-flex;
+    justify-content: center;
+    width: 130px;
+    height: 6vh;
+   background:  #35668a;
+    border: 2px solid #0b445a;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    align-items: center;
+    
+}
+.btn1:hover{
+    content: '';
+position: relative;
+width: 160px;
+background: lawngreen;
+z-index: 1;
+transition: 1s;
+}
+
+.btn2{
+    display: inline-flex;
+    justify-content: center;
+    width: 130px;
+    height: 6vh;
+    background: #0c8cb3;
+    border: 2px solid #0b445a;
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: transparent;
+    align-items: center;
+}
+.btn2:hover{
+    content: '';
+position: relative;
+width: 160px;
+background: rgb(95, 95, 38);
+z-index: 1;
+transition: 1s;
+}
+.img{
+    display: flex;
+    left: 100%;
+    margin-left: 30%;
+    margin-top: 0%;
+}
+.icons{
+    position: absolute;
+    width: 200px;
+    height: fit-content;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.icons a{
+position: relative;
+    display: inline-flex;
+    width: 30%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid rgb(7, 84, 155); 
+    align-items: center;   
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 30px;
+    border: transparent;
+    z-index: 1;
+    overflow: hidden;
+}
+.icons a::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #113d5c;
+    z-index: -1;
+    transition: .5s;
+}
+.icons a:hover::before{
+    width: 100%;
+ 
+}
+@keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Apply animation to an element */
+  .logo {
+    width: 10px;
+    height: 00px;
+    animation: move 3s ease-in-out infinite; /* Apply the animation */
+  }
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Apply animation to the element */
+  h3 {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    animation: heartbeat 1s infinite; /* Apply the animation */
+  }
+  @keyframes jelly {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1.25, 0.75);
+    }
+    50% {
+      transform: scale(0.75, 1.25);
+    }
+    75% {
+      transform: scale(1.15, 0.85);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  /* Apply animation to the element */
+  .h {
+    width: 10px;
+    height: 50px;
+    animation: jelly 3s infinite; /* Apply the animation */
+  }
+  .img1{
+   height: 300px;
+   margin-left: 170px;
+   filter:drop-shadow(5px 2px 15px rgb(41, 88, 151));
+  }
+
+  
